@@ -31,9 +31,12 @@ toggleButton.addEventListener('click' , () =>{
         
 })
 removeButton.addEventListener('click' , () =>{
-    currentVar = currentVar.slice(0,-1);
-
-    displayValue(currentVar);
+        
+        currentVar = currentVar.slice(0,-1);
+        displayValue(currentVar);
+    
+    
+    
 })
 equalButton.addEventListener('click' , ()=>{
     calculate();
@@ -63,6 +66,8 @@ function takeNumber(e){
     tempVar = e.target.textContent;
     currentVar = currentVar + tempVar;
     displayValue(currentVar);
+    
+    
     
 }
 function displayValue(value){
